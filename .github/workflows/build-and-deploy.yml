@@ -33,6 +33,12 @@ jobs:
                   cache: "npm"
             - run: npm ci
             - run: npm run build
+            - name: Archive out directory
+              uses: actions/upload-artifact@v4
+              with:
+                  name: out-dir
+                  path: out
+                  retention-days: 1
 
     deploy:
         needs: build
@@ -43,6 +49,10 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
+            - name: Download out directory
+              uses: actions/download-artifact@v4
+              with:
+                  name: out-dir
             - name: Setup Pages
               uses: actions/configure-pages@v5
             - name: Upload artifact
