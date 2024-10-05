@@ -190,6 +190,10 @@ button:disabled:active,
   margin-bottom: var(--cell-size);
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .p-1 {
   padding: calc(var(--cell-size) / 2);
 }

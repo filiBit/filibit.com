@@ -78,7 +78,7 @@ export default function RootLayout({
                                         <div
                                             role="img"
                                             aria-roledescription="Logo of Filibit company"
-                                            className="grow row border row align-center px-1 h-1 w-full md:w-auto justify-start md:justify-center border-0 border-bottom md:border no-select"
+                                            className="grow row border row align-center justify-center md:px-1 h-1 w-full md:w-auto md:justify-center border-0 border-bottom md:border no-select"
                                         >
                                             <span>&lt;</span>Filibit&nbsp;
                                             <span>/</span>
@@ -190,20 +190,23 @@ export default function RootLayout({
                     <div className="h-1 w-full md:hidden"></div>
                     <nav className="fixed row md:hidden bottom w-full bg border-collapse-box-x">
                         <Link
-                            className="button h-1 w-full border-left-0"
+                            className="button h-1 w-full border-left-0 p-0"
                             href="/"
                         >
                             Home
                         </Link>
-                        <Link href="/showcase" className="button h-1 w-full">
+                        <Link
+                            href="/showcase"
+                            className="button h-1 w-full p-0"
+                        >
                             Showcase
                         </Link>
-                        <Link href="/about" className="button h-1 w-full">
+                        <Link href="/about" className="button h-1 w-full p-0">
                             About
                         </Link>
                         <Link
                             href="/contact"
-                            className="button h-1 w-full border-right-0"
+                            className="button h-1 w-full border-right-0 p-0"
                         >
                             Contact
                         </Link>
