@@ -19,28 +19,15 @@ export default function Home() {
             </p>
             <div className="m-1 sm:m-2 col md:row wrap space-2 justify-center">
                 <div className="basis-1/2 lg:basis-1/4 grow">
-                    <h2 className={`${styles["sub-title"]} text-center`}>
-                        Aesthetic
-                    </h2>
-                    <p>
-                        Beauty can be measured objectively by symetry,
-                        responsiveness, consistent spacing and other visual
-                        patterns.
-                    </p>
-                    <p>
-                        I apply this knowledge to Graphical User Interface
-                        (GUI).
-                    </p>
-                </div>
-                <div className="basis-1/2 lg:basis-1/4 grow">
                     <h2
                         className={`${styles["sub-title"]} text-center basis-1/2 md:basis-1/3  grow`}
                     >
                         Usable
                     </h2>
                     <p>
-                        Intuitive visuals, readability, and a good user flow
-                        contribute to your brand and productivity of the app.
+                        Intuitive design, readability, and a good user flow are
+                        essential for productivity and ease of use of your
+                        software.
                     </p>
                     <p>
                         There&apos;s a whole science behind the User Experience
@@ -54,12 +41,43 @@ export default function Home() {
                         Performant
                     </h2>
                     <p>
-                        Low operating cost and fast load time is important for
-                        any online business.
+                        Fast load time and data access coupled with low
+                        operating cost will make the app enjoyable to use and
+                        help keep your business operable.
                     </p>
                     <p>
-                        I invest significant effort into designing a cloud
+                        I invest significant effort into implementing a cloud
                         infrastructure specifically for your use case.
+                    </p>
+                </div>
+                <div className="basis-1/2 lg:basis-1/4 grow">
+                    <h2 className={`${styles["sub-title"]} text-center`}>
+                        Aesthetic
+                    </h2>
+                    <p>
+                        Beauty has objective qualities such as symetry,
+                        responsiveness, consistent spacing and other visual
+                        patterns.
+                    </p>
+                    <p>
+                        I will apply this knowledge to Graphical User Interface
+                        (GUI) of the solution you order.
+                    </p>
+                </div>
+                <div className="basis-1/2 lg:basis-1/3 grow">
+                    <h2
+                        className={`${styles["sub-title"]} text-center basis-1/2 md:basis-1/3  grow`}
+                    >
+                        Secure
+                    </h2>
+                    <p>
+                        Applying industry standards and common-sense security
+                        practices to keep the data of your business and users
+                        secure.
+                    </p>
+                    <p>
+                        Good authorization, password hashing, regular backups,
+                        etc. will ensure security and robustenss of your system.
                     </p>
                 </div>
                 <div className="basis-1/2 lg:basis-1/3 grow">
@@ -70,27 +88,12 @@ export default function Home() {
                     </h2>
                     <p>
                         By familiarizing myself with your business domain, I
-                        will optimally design a system for your need.
+                        will design an optimal system while following
+                        common-sense coding practices.
                     </p>
                     <p>
-                        This will make your software unique and tailored to your
-                        needs.
-                    </p>
-                </div>
-                <div className="basis-1/2 lg:basis-1/3 grow">
-                    <h2
-                        className={`${styles["sub-title"]} text-center basis-1/2 md:basis-1/3  grow`}
-                    >
-                        Maintainable
-                    </h2>
-                    <p>
-                        Common sense coding practices, simple deployment flow
-                        and vendor independence promote flexibility.
-                    </p>
-                    <p>
-                        These qualities will make your system scalable, robust
-                        and easy to upgrade in the future. It will also give you
-                        freedom to switch the developer if you were to wish so.
+                        This will make your software maintainable, unique and
+                        tailored to your needs.
                     </p>
                 </div>
                 <div className="basis-1/1 lg:basis-1/3 grow">
