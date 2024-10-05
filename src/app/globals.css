@@ -17,10 +17,14 @@
   --fg-light: #000000;
   --bg-dark: #000000;
   --bg-dim-dark: #011e01;
-  --bg-light: #ffffff;
-  --bg-dim-light: #e7e7e7;
-  --fg-invert-dark: #20d02090;
-  --fg-invert-light: #00000090;
+  --bg-light: #f0f0f0;
+  --bg-dim-light: #e0e0e0;
+  --bg-invert-dark: #15b11590;
+  --bg-invert-light: #000;
+  --fg-accent-dark: #e0e0e0;
+  --bg-accent-dark: none;
+  --fg-accent-light: #57ea57;
+  --bg-accent-light: #000;
 
   color-scheme: light dark;
 
@@ -51,16 +55,20 @@ body {
 
 body.color-scheme-dark {
   --fg: var(--fg-dark);
-  --fg-invert: var(--fg-invert-dark);
+  --bg-invert: var(--bg-invert-dark);
   --bg: var(--bg-dark);
   --bg-dim: var(--bg-dim-dark);
+  --fg-accent: var(--fg-accent-dark);
+  --bg-accent: var(--bg-accent-dark);
 }
 
 body.color-scheme-light {
   --fg: var(--fg-light);
-  --fg-invert: var(--fg-invert-light);
+  --bg-invert: var(--bg-invert-light);
   --bg: var(--bg-light);
   --bg-dim: var(--bg-dim-light);
+  --fg-accent: var(--fg-accent-light);
+  --bg-accent: var(--bg-accent-light);
 }
 
 ::selection {
@@ -97,6 +105,17 @@ button:hover,
   background: var(--fg);
 }
 
+button.active,
+.button.active {
+  color: var(--fg-accent);
+  background: var(--bg-accent);
+}
+
+button.active:hover,
+.button.active:hover {
+  background: var(--bg-invert);
+}
+
 button:disabled,
 .button:disabled,
 .disabled {
@@ -108,6 +127,10 @@ button:disabled:active,
 .button:disabled:active,
 .disabled:active {
   pointer-events: none;
+}
+
+.letter-2 {
+  letter-spacing: 0.1rem;
 }
 
 .border {
@@ -592,7 +615,7 @@ a {
 
 a:hover {
   color: var(--bg);
-  background: var(--fg-invert);
+  background: var(--fg);
 }
 
 a:current {
