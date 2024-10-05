@@ -34,7 +34,7 @@ export default function About() {
 
             <p className="mt mb-2">
                 The company is entered in the court register of the Commercial
-                Court in Zagreb under the registration file with the subject
+                Court in Osijek under the registration file with the subject
                 registration number (MBS) 030295426. The capital stock in the
                 amount of 2.500,00 euro was paid completely.
             </p>

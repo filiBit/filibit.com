@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { useCallback, useState } from "react";
 import { Roboto_Mono } from "next/font/google";
+import { usePathname } from "next/navigation";
 
 const notoSansMono = Roboto_Mono({
     style: ["normal"],
@@ -27,6 +28,7 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const pathname = usePathname();
     const [colorScheme, setColorScheme] = useState<ColorScheme>("dark");
 
     const changeColorScheme = useCallback((colorScheme: null | ColorScheme) => {
@@ -78,7 +80,7 @@ export default function RootLayout({
                                         <div
                                             role="img"
                                             aria-roledescription="Logo of Filibit company"
-                                            className="grow row border row align-center px-1 h-1 w-full md:w-auto justify-start md:justify-center border-0 border-bottom md:border no-select"
+                                            className="grow row border row align-center justify-center md:px-1 h-1 w-full md:w-auto md:justify-center border-0 border-bottom md:border no-select"
                                         >
                                             <span>&lt;</span>Filibit&nbsp;
                                             <span>/</span>
@@ -96,54 +98,87 @@ export default function RootLayout({
                                         >
                                             Theme [{colorScheme}]
                                         </button>
-                                        <div className="hidden md:row lg:hidden w-full border-collapse-box-x">
+                                        <nav className="hidden md:row lg:hidden w-full border-collapse-box-x letter-2">
                                             <Link
-                                                className="button h-1 w-full"
+                                                className={`button h-1 w-full ${
+                                                    pathname === "/"
+                                                        ? "active"
+                                                        : ""
+                                                }`}
                                                 href="/"
                                             >
                                                 Home
                                             </Link>
                                             <Link
                                                 href="/showcase"
-                                                className="button h-1 w-full"
+                                                className={`button h-1 w-full ${
+                                                    pathname === "/showcase"
+                                                        ? "active"
+                                                        : ""
+                                                }`}
                                             >
                                                 Showcase
                                             </Link>
                                             <Link
                                                 href="/about"
-                                                className="button h-1 w-full"
+                                                className={`button h-1 w-full ${
+                                                    pathname === "/about"
+                                                        ? "active"
+                                                        : ""
+                                                }`}
                                             >
                                                 About
                                             </Link>
                                             <Link
                                                 href="/contact"
-                                                className="button h-1 w-full"
+                                                className={`button h-1 w-full ${
+                                                    pathname === "/contact"
+                                                        ? "active"
+                                                        : ""
+                                                }`}
                                             >
                                                 Contact
                                             </Link>
-                                        </div>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
                             <div className="col lg:row space">
-                                <nav className="hidden lg:col border-collapse-box-y">
-                                    <Link className="button h-1 w-2" href="/">
+                                <nav className="hidden lg:col border-collapse-box-y letter-2">
+                                    <Link
+                                        className={`button h-1 w-2 ${
+                                            pathname === "/" ? "active" : ""
+                                        }`}
+                                        href="/"
+                                    >
                                         Home
                                     </Link>
                                     <Link
-                                        className="button h-1 w-2"
+                                        className={`button h-1 w-2 ${
+                                            pathname === "/showcase"
+                                                ? "active"
+                                                : ""
+                                        }`}
                                         href="/showcase"
                                     >
                                         Showcase
                                     </Link>
                                     <Link
-                                        className="button h-1 w-2"
+                                        className={`button h-1 w-2 ${
+                                            pathname === "/about"
+                                                ? "active"
+                                                : ""
+                                        }`}
                                         href="/about"
                                     >
                                         About
                                     </Link>
                                     <Link
-                                        className="button h-1 w-2"
+                                        className={`button h-1 w-2 ${
+                                            pathname === "/contact"
+                                                ? "active"
+                                                : ""
+                                        }`}
                                         href="/contact"
                                     >
                                         Contact
@@ -190,20 +225,34 @@ export default function RootLayout({
                     <div className="h-1 w-full md:hidden"></div>
                     <nav className="fixed row md:hidden bottom w-full bg border-collapse-box-x">
                         <Link
-                            className="button h-1 w-full border-left-0"
+                            className={`button h-1 w-full border-left-0 p-0 ${
+                                pathname === "/" ? "active" : ""
+                            }`}
                             href="/"
                         >
                             Home
                         </Link>
-                        <Link href="/showcase" className="button h-1 w-full">
+                        <Link
+                            href="/showcase"
+                            className={`button h-1 w-full p-0 ${
+                                pathname === "/showcase" ? "active" : ""
+                            }`}
+                        >
                             Showcase
                         </Link>
-                        <Link href="/about" className="button h-1 w-full">
+                        <Link
+                            href="/about"
+                            className={`button h-1 w-full p-0 ${
+                                pathname === "/about" ? "active" : ""
+                            }`}
+                        >
                             About
                         </Link>
                         <Link
                             href="/contact"
-                            className="button h-1 w-full border-right-0"
+                            className={`button h-1 w-full border-right-0 p-0 ${
+                                pathname === "/contact" ? "active" : ""
+                            }`}
                         >
                             Contact
                         </Link>
