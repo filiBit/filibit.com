@@ -228,7 +228,7 @@ export default function RootLayout({
                                 </Link>
                             </nav>
 
-                            <div className="col gap-3 grow">
+                            <div className="col gap-0 md:gap-3 grow">
                                 <main className="col w-100% md:border-1px md:round-1 grow-0 overflow-no primary solid">
                                     {children}
                                 </main>
