@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import styles from "../page.module.css";
 
 export const metadata: Metadata = {
     title: "Filibit software | Contact",
@@ -9,17 +8,19 @@ export const metadata: Metadata = {
 export default function Contact() {
     return (
         <>
-            <h1 className={`text-center ${styles.title} m-2 mb-1`}>Contact</h1>
-
-            <div className="m-1 md:m-1 col md:row space align-center md:align-start">
-                <div className="border row">
+            <div className="row align-center h-6 px-2 fg-$bg tab-bar">
+                &gt; Contact
+            </div>
+            <h1 className={`text-center h1 mt-8 mb-8`}>Contact</h1>
+            <div className="mb-8 p-2 md:p-3 col md:row gap-3 align-center md:align-start md:justify-center">
+                <div className="border-1px row round-1 overflow-no">
                     <img
                         src="/fb.jpg"
-                        className="w-2"
+                        className="x-span-2 filter-low hover:filter-no"
                         alt="Portrait of Filip Biterski"
                     />
                 </div>
-                <p className="m-0">
+                <p className="m-0 lh-2em">
                     N: Filip Biterski
                     <br />
                     P: +385 95 732 0081
