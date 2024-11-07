@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: "https://filibit.com",
             lastModified: new Date(),
-            changeFrequency: "weekly",
+            changeFrequency: "monthly",
             priority: 1,
         },
         {
@@ -17,13 +17,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: "https://filibit.com/about",
             lastModified: new Date(),
-            changeFrequency: "weekly",
+            changeFrequency: "monthly",
             priority: 0.5,
         },
         {
             url: "https://filibit.com/contact",
             lastModified: new Date(),
-            changeFrequency: "weekly",
+            changeFrequency: "monthly",
             priority: 0.5,
         },
     ];
