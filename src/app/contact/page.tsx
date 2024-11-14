@@ -8,9 +8,6 @@ export const metadata: Metadata = {
 export default function Contact() {
     return (
         <>
-            <div className="row align-center h-6 px-2 fg-$bg tab-bar">
-                &gt; Contact
-            </div>
             <h1 className={`text-center h1 mt-8 mb-8`}>Contact</h1>
             <div className="mb-8 p-2 md:p-3 col md:row gap-3 align-center md:align-start md:justify-center">
                 <div className="border-1px row round-1 overflow-no">
