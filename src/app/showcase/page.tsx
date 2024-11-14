@@ -9,9 +9,6 @@ export const metadata: Metadata = {
 export default function Showcase() {
     return (
         <>
-            <div className="row align-center h-6 px-2 fg-$bg tab-bar">
-                &gt; Showcase
-            </div>
             <div className="px-2 md:px-4">
                 <h1 className="h1 text-center mt-8 mb-8">Showcase</h1>
                 <div className="col">
