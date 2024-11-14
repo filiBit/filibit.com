@@ -8,9 +8,6 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <>
-            <div className="row align-center h-6 px-2 fg-$bg tab-bar">
-                &gt; About
-            </div>
             <div className="px-2 md:px-4">
                 <h1 className={`text-center h1 my-8`}>About</h1>
 
