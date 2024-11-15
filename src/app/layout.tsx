@@ -230,7 +230,7 @@ export default function RootLayout({
                             </nav>
 
                             <div className="col gap-0 md:gap-3 grow">
-                                <main className="col w-100% md:border-1px md:round-1 grow-0 overflow-no primary solid">
+                                <main className="col w-100% border-top-1px md:border-1px md:round-1 grow-0 overflow-no primary solid">
                                     <div className="row align-center h-6 px-2 fg-$bg border-bottom-1px">
                                         &gt;{" "}
                                         {pathname.slice(1, 2).toUpperCase() +
@@ -243,7 +243,7 @@ export default function RootLayout({
                         </div>
                     </div>
 
-                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1">
+                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px solid">
                         <Link
                             className={`button h-6 grow p-0 ${
                                 pathname === "/" ? "active" : ""
