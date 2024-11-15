@@ -14,7 +14,7 @@ export default function Home() {
                     Web solutions that just work
                 </h1>
                 <p className="mt-1 mb-8 text-center">
-                    Software with unique qualities
+                    Exotic software with best qualities
                 </p>
                 <div className="my-2 md:my-4 row flex-wrap gap-6 md:gap-4 justify-center">
                     <div className="x-span-5 grow border-1px round-1 overflow-no">
