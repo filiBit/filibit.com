@@ -75,7 +75,9 @@ export default function RootLayout({
                                 <nav className="hide md:row lg:hide gap-1">
                                     <Link
                                         className={`button h-6 ${
-                                            pathname === "/" ? "active" : ""
+                                            pathname === "/"
+                                                ? "var-contained"
+                                                : ""
                                         }`}
                                         href="/"
                                     >
@@ -85,7 +87,7 @@ export default function RootLayout({
                                         href="/showcase"
                                         className={`button h-6 ${
                                             pathname === "/showcase"
-                                                ? "active"
+                                                ? "var-contained"
                                                 : ""
                                         }`}
                                     >
@@ -95,7 +97,7 @@ export default function RootLayout({
                                         href="/about"
                                         className={`button h-6 ${
                                             pathname === "/about"
-                                                ? "active"
+                                                ? "var-contained"
                                                 : ""
                                         }`}
                                     >
@@ -105,7 +107,7 @@ export default function RootLayout({
                                         href="/contact"
                                         className={`button h-6 ${
                                             pathname === "/contact"
-                                                ? "active"
+                                                ? "var-contained"
                                                 : ""
                                         }`}
                                     >
@@ -136,7 +138,7 @@ export default function RootLayout({
                                 </button>
                                 <button
                                     className={`lg:hide button tertiary h-6 toggle ${
-                                        isMenuOpen ? "active" : ""
+                                        isMenuOpen ? "var-contained" : ""
                                     }`}
                                     onClick={toggleMenu}
                                 >
@@ -175,7 +177,7 @@ export default function RootLayout({
                             <nav className="hide lg:col gap-1 letter-0.1em w-span-3 hue-d">
                                 <Link
                                     className={`button h-6 ${
-                                        pathname === "/" ? "active" : ""
+                                        pathname === "/" ? "var-contained" : ""
                                     }`}
                                     href="/"
                                 >
@@ -183,7 +185,9 @@ export default function RootLayout({
                                 </Link>
                                 <Link
                                     className={`button h-6 ${
-                                        pathname === "/showcase" ? "active" : ""
+                                        pathname === "/showcase"
+                                            ? "var-contained"
+                                            : ""
                                     }`}
                                     href="/showcase"
                                 >
@@ -191,7 +195,9 @@ export default function RootLayout({
                                 </Link>
                                 <Link
                                     className={`button h-6 ${
-                                        pathname === "/about" ? "active" : ""
+                                        pathname === "/about"
+                                            ? "var-contained"
+                                            : ""
                                     }`}
                                     href="/about"
                                 >
@@ -199,7 +205,9 @@ export default function RootLayout({
                                 </Link>
                                 <Link
                                     className={`button h-6 ${
-                                        pathname === "/contact" ? "active" : ""
+                                        pathname === "/contact"
+                                            ? "var-contained"
+                                            : ""
                                     }`}
                                     href="/contact"
                                 >
@@ -224,7 +232,7 @@ export default function RootLayout({
                     <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px solid">
                         <Link
                             className={`button h-6 grow p-0 ${
-                                pathname === "/" ? "active" : ""
+                                pathname === "/" ? "var-contained" : ""
                             }`}
                             href="/"
                         >
@@ -233,7 +241,7 @@ export default function RootLayout({
                         <Link
                             href="/showcase"
                             className={`button h-6 grow p-0 ${
-                                pathname === "/showcase" ? "active" : ""
+                                pathname === "/showcase" ? "var-contained" : ""
                             }`}
                         >
                             Showcase
@@ -241,7 +249,7 @@ export default function RootLayout({
                         <Link
                             href="/about"
                             className={`button h-6 grow p-0 ${
-                                pathname === "/about" ? "active" : ""
+                                pathname === "/about" ? "var-contained" : ""
                             }`}
                         >
                             About
@@ -249,7 +257,7 @@ export default function RootLayout({
                         <Link
                             href="/contact"
                             className={`button h-6 grow p-0 ${
-                                pathname === "/contact" ? "active" : ""
+                                pathname === "/contact" ? "var-contained" : ""
                             }`}
                         >
                             Contact
