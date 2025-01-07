@@ -72,7 +72,7 @@ export default function RootLayout({
                                 <Logo />
                             </Link>
                             <div className="row justify-end gap-1">
-                                <nav className="hide md:row lg:hide gap-1">
+                                <nav className="hide md:row lg:hide gap-1 hue-d">
                                     <Link
                                         className={`button h-6 ${
                                             pathname === "/"
