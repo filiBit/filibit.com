@@ -13,11 +13,11 @@ export default function Contact() {
                 <div className="border-1px row round-1 overflow-no">
                     <img
                         src="/fb.jpg"
-                        className="x-span-2 filter-low hover:filter-no"
+                        className="w-span-2 filter-low hover:filter-no"
                         alt="Portrait of Filip Biterski"
                     />
                 </div>
-                <p className="m-0 lh-2em">
+                <p className="m-0 lh-2">
                     N: Filip Biterski
                     <br />
                     P: +385 95 732 0081

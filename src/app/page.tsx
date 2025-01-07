@@ -17,64 +17,60 @@ export default function Home() {
                     Exotic software with best qualities
                 </p>
                 <div className="my-2 md:my-4 row flex-wrap gap-6 md:gap-4 justify-center">
-                    <div className="x-span-5 grow border-1px round-1 overflow-no">
-                        <h2 className="row m-0 align-center justify-center h3 text-center tab-bar y-span-1">
-                            Aesthetic
+                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
+                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                            Languages
                         </h2>
-                        <p className="m-0 p-2">
-                            Beautiful, intuitive and readable. A user interface
-                            with traits that can be measured objectively.
-                        </p>
+                        <p className="m-0 p-2">Typescript and Javascript </p>
                     </div>
-                    <div className="x-span-5 grow border-1px round-1 overflow-no">
-                        <h2 className="row m-0 align-center justify-center h3 text-center tab-bar y-span-1">
-                            Fast
+                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
+                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                            Environments
                         </h2>
-                        <p className="m-0 p-2">
-                            Smart optimizations from initial load time and data
-                            access, to SEO (Search Engine Optimization).
-                        </p>
+                        <p className="m-0 p-2">node and deno</p>
                     </div>
-                    <div className="x-span-5 grow border-1px round-1 overflow-no">
-                        <h2 className="row m-0 align-center justify-center h3 text-center tab-bar y-span-1">
-                            Robust
+                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
+                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                            Frontend
                         </h2>
-                        <p className="m-0 p-2">
-                            System redundancy with automated database backups,
-                            implemented fail-safes, and monitoring.
+                        <p className="my-2 px-2">
+                            React, Angular 14+, Solid, Next.js
                         </p>
+                        <p className="my-2 px-2">Redux, MobX</p>
                     </div>
-                    <div className="x-span-5 grow border-1px round-1 overflow-no">
-                        <h2 className="row m-0 align-center justify-center h3 text-center tab-bar y-span-1">
-                            Secure
+                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
+                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                            Communication
+                        </h2>
+                        <p className="m-0 p-2">JSON:API, GraphQL</p>
+                    </div>
+                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
+                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                            Backend
+                        </h2>
+                        <p className="m-0 p-2">SQLite, Express.js</p>
+                    </div>
+                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
+                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                            Code
                         </h2>
                         <p className="m-0 p-2">
-                            Industry standards and common-sense security
-                            practices. Authorization, data encryption and user
-                            permision controls to name a few.
-                        </p>
-                    </div>
-                    <div className="x-span-5 grow border-1px round-1 overflow-no">
-                        <h2 className="row m-0 align-center justify-center h3 text-center tab-bar y-span-1">
-                            Maintainable
-                        </h2>
-                        <p className="m-0 p-2">
-                            Adherence to good coding practices, design
-                            principles and patterns.
-                        </p>
-                    </div>
-                    <div className="x-span-5 grow border-1px round-1 overflow-no">
-                        <h2 className="row m-0 align-center justify-center h3 text-center tab-bar y-span-1">
-                            Legal
-                        </h2>
-                        <p className="m-0 p-2">
-                            Compliance with internet laws and standards. These
-                            include GDPR, FTCA, WCAG and WAI-ARIA.
+                            Adherence with coding practices, design principles
+                            and patterns.
                         </p>
                     </div>
                 </div>
-                <div className="col align-center mt-8 mb-8">
-                    <Link href="/contact" className="button h-6">
+                <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center mt-8 mb-8">
+                    <Link
+                        href="/showcase"
+                        className="button var-contained w-span-4 hue-d h-6"
+                    >
+                        Explore showcase
+                    </Link>
+                    <Link
+                        href="/contact"
+                        className="button var-contained w-span-4 hue-d h-6"
+                    >
                         Contact me
                     </Link>
                 </div>

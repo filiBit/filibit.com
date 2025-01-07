@@ -3,7 +3,7 @@ import { Logo } from "./Logo";
 
 export function Footer() {
     return (
-        <footer className="col p-2 md:p-4 pt-6 pb-14 md:pt-2 md:pb-2 border-top-1px md:border-1px round-0 md:round-1 gap-6 sm:gap-3 secondary solid lh-2em">
+        <footer className="col p-2 md:p-4 pt-6 pb-14 md:pt-2 md:pb-2 border-top-1px md:border-1px round-0 md:round-1 gap-6 sm:gap-3 lh-2 hue-c light:chroma-bg-3">
             <div className="col sm:row row gap-6 justify-between">
                 <div className="col align-center sm:align-start">
                     <Link href="/" className="link">
