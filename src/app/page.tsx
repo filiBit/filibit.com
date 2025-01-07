@@ -10,11 +10,9 @@ export default function Home() {
     return (
         <>
             <div className="px-2 md:px-4">
-                <h1 className="text-center h1 mt-8 mb-0">
-                    Web solutions that just work
-                </h1>
+                <h1 className="text-center h1 mt-8 mb-0">Welcome</h1>
                 <p className="mt-1 mb-8 text-center">
-                    Exotic software with best qualities
+                    Here are some of my technical skills
                 </p>
                 <div className="my-2 md:my-4 row flex-wrap gap-6 md:gap-4 justify-center">
                     <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
