@@ -167,7 +167,7 @@ export default function RootLayout({
                                 </button>
                                 <Link
                                     href="https://github.com/filiBit"
-                                    className="hide lg:row button h-6 tertiary"
+                                    className="button"
                                 >
                                     <GithubIcon className="h-3 w-3" />
                                 </Link>
