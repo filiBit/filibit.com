@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
 import { useSystemColorScheme } from "@/hooks/ useSystemColorScheme";
+import { GithubIcon } from "@/components/icon/github";
 
 const notoSansMono = Roboto_Mono({
     style: ["normal"],
@@ -130,12 +131,12 @@ export default function RootLayout({
                                 >
                                     Rounded
                                 </button>
-                                <button
+                                <Link
+                                    href="https://github.com/filiBit"
                                     className="hide lg:row button h-6 tertiary"
-                                    disabled
                                 >
-                                    Language [en]
-                                </button>
+                                    <GithubIcon className="h-3 w-3" />
+                                </Link>
                                 <button
                                     className={`lg:hide button tertiary h-6 toggle ${
                                         isMenuOpen ? "var-contained" : ""
@@ -164,12 +165,12 @@ export default function RootLayout({
                                 >
                                     Rounded
                                 </button>
-                                <button
-                                    className="button h-6 tertiary"
-                                    disabled
+                                <Link
+                                    href="https://github.com/filiBit"
+                                    className="hide lg:row button h-6 tertiary"
                                 >
-                                    Language [en]
-                                </button>
+                                    <GithubIcon className="h-3 w-3" />
+                                </Link>
                             </div>
                         )}
 
