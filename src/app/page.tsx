@@ -10,51 +10,65 @@ export default function Home() {
     return (
         <>
             <div className="px-2 md:px-4">
-                <h1 className="text-center h1 mt-8 mb-0">Welcome</h1>
-                <p className="mt-1 mb-8 text-center">
-                    Here are some of my technical skills
+                <h1 className="text-center h1 mt-8 mb-4">Welcome</h1>
+                <p>
+                    My name is Filip Biterski. I am a Web developer with many
+                    years of professional experience in Frontend.
                 </p>
+                <p>
+                    Software is my passion, so my free time is usually spent
+                    creating software products and open-source libraries.
+                </p>
+                <p className="my-8 text-center">Here are some of my skills</p>
                 <div className="my-2 md:my-4 row flex-wrap gap-6 md:gap-4 justify-center">
                     <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
-                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                        <h2 className="row m-0 align-center justify-center my-2 h3 text-center">
                             Languages
                         </h2>
-                        <p className="m-0 p-2">Typescript and Javascript </p>
+                        <p className="my-3 px-3">
+                            Javascript, Typescript, JSDoc
+                        </p>
                     </div>
                     <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
-                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                        <h2 className="row my-2 align-center justify-center h3 text-center">
                             Environments
                         </h2>
-                        <p className="m-0 p-2">node and deno</p>
+                        <p className="my-3 px-3">Browser, node, deno</p>
                     </div>
                     <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
-                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                        <h2 className="row my-2 align-center justify-center h3 text-center">
                             Frontend
                         </h2>
-                        <p className="my-2 px-2">
-                            React, Angular 14+, Solid, Next.js
+                        <p className="my-3 px-3">
+                            React, Next.js, Angular 14+, Vue, Redux, Webpack,
+                            HTML, CSS
                         </p>
-                        <p className="my-2 px-2">Redux, MobX</p>
                     </div>
                     <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
-                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
-                            Communication
-                        </h2>
-                        <p className="m-0 p-2">JSON:API, GraphQL</p>
-                    </div>
-                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
-                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
+                        <h2 className="row my-2 align-center justify-center h3 text-center">
                             Backend
                         </h2>
-                        <p className="m-0 p-2">SQLite, Express.js</p>
+                        <p className="my-3 px-3">
+                            SQL, SQLite, Express.js, JSON:API, GraphQL
+                        </p>
                     </div>
                     <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
-                        <h2 className="row m-0 align-center justify-center h3 text-center h-span-1">
-                            Code
+                        <h2 className="row my-2 align-center justify-center h3 text-center">
+                            Software design
                         </h2>
-                        <p className="m-0 p-2">
-                            Adherence with coding practices, design principles
-                            and patterns.
+                        <p className="my-3 px-3">
+                            Design principles and design patterns
+                        </p>
+                    </div>
+                    <div className="w-span-5 grow border-1px round-1 overflow-no hue-d chroma-bg-3">
+                        <h2 className="row my-2 align-center justify-center h3 text-center">
+                            More
+                        </h2>
+                        <p className="my-3 px-3">
+                            Checkout my CV{" "}
+                            <a href="/CV.pdf" className="link">
+                                here
+                            </a>
                         </p>
                     </div>
                 </div>
