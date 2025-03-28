@@ -230,7 +230,7 @@ export default function RootLayout({
                         </div>
                     </div>
 
-                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px solid">
+                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px chroma-bg-0">
                         <Link
                             className={`button h-6 grow p-0 ${
                                 pathname === "/" ? "var-contained" : ""
