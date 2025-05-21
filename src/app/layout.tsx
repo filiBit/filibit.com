@@ -64,7 +64,10 @@ export default function RootLayout({
                         "--ox-round-factor": cornerRadiusFactor,
                     }}
                 >
-                    <div className="grow w-span-16 max-w-100% mx-auto col gap-2 md:gap-3">
+                    <div
+                        className="grow max-w-100% mx-auto col gap-2 md:gap-3"
+                        style={{ width: "1280px" }}
+                    >
                         <div className="mt-2 mx-2 md:m-0 row gap-1 justify-between">
                             <Link
                                 href="/"
@@ -217,7 +220,7 @@ export default function RootLayout({
                             </nav>
 
                             <div className="col gap-0 md:gap-3 grow">
-                                <main className="col w-100% border-top-1px md:border-1px md:round-1 grow-0 overflow-no primary light:chroma-bg-3">
+                                <main className="col w-100% border-top-1px md:border-1px md:round-1 grow-0 overflow-no primary">
                                     <div className="row align-center h-6 px-2 fg-$bg border-bottom-1px">
                                         &gt;{" "}
                                         {pathname.slice(1, 2).toUpperCase() +
