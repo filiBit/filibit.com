@@ -1,7 +1,7 @@
 "use client";
 
 import "./globals.css";
-import "./oxiris-css-2.1.0.css";
+import "./oxiris-css-2.2.0.css";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { Roboto_Mono } from "next/font/google";
