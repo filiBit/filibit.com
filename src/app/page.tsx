@@ -40,7 +40,7 @@ export default function Home() {
                         ]}
                     />
                 </div>
-                <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center mt-8 mb-8 border-1px py-6 px-2 chroma-bg-2 hue-d">
+                <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center mt-8 mb-8 border-1px round-1 py-6 px-2 chroma-bg-2 hue-d">
                     <Link
                         href="/showcase"
                         className="button var-contained w-span-4 h-6 chroma-bg-0"
