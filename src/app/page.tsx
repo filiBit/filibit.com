@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Filibit software",
-    description: "Web solutions that just work",
+    description: "Building a custom Web solution for your business",
 };
 
 export default function Home() {
