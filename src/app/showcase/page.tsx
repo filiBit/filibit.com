@@ -35,7 +35,7 @@ export default function Showcase() {
                         description="A CSS framework for building nice GUIs (Graphical User Interfaces) fast. Wide set of utility and component classes are available for a good developer experience and consistency with design language."
                         tags={["CSS", "Javascript"]}
                         footerContent={
-                            <div className="row flex-wrap px-2 pb-2 pt-2 md:pt-0 hue-d">
+                            <div className="row flex-wrap px-2 pb-2 pt-2 hue-d">
                                 <a
                                     href="https://oxiris.filibit.com"
                                     className="button var-contained align-self-start h-5 f-size-sm"
@@ -58,7 +58,7 @@ export default function Showcase() {
                             "Virtual DOM",
                         ]}
                         footerContent={
-                            <div className="row flex-wrap px-2 pb-2 pt-2 md:pt-0 hue-d">
+                            <div className="row flex-wrap px-2 pb-2 pt-2 hue-d">
                                 <a
                                     href="https://abstraxo.com"
                                     className="button var-contained align-self-start h-5 f-size-sm"

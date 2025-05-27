@@ -53,7 +53,7 @@ export function ShowcaseCard({
                 </div>
             </div>
             {footerContent && (
-                <div className="border-top-1px pt-2">{footerContent}</div>
+                <div className="border-top-1px">{footerContent}</div>
             )}
         </div>
     );
