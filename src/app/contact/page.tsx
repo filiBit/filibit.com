@@ -14,9 +14,12 @@ export default function Contact() {
                 <div className="border-1px row round-1 overflow-no">
                     <img
                         src="/fb.jpg"
-                        className="w-span-2 filter-low hover:filter-no"
-                        alt="Portrait of Filip Biterski"
+                        alt="Portrait photo"
+                        width={240}
+                        height={318}
+                        className="w-span-2 filter-low hover:filter-no chroma-bg-2"
                         draggable="false"
+                        style={{ height: "auto" }}
                     />
                 </div>
                 <div className="col gap-2">

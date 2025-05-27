@@ -23,7 +23,15 @@ export function ShowcaseCard({
             <div className="pt-2 grow col gap-2 justify-between chroma-bg">
                 <div className="grow col gap-2 chroma-bg">
                     {imageUrls?.map((url) => (
-                        <img key={url} src={url} className="mx-2 border-1px" />
+                        <img
+                            key={url}
+                            alt="Project preview"
+                            src={url}
+                            width={1008}
+                            height={672}
+                            style={{ height: "auto", width: "auto" }}
+                            className="mx-2 border-1px chroma-bg-2"
+                        />
                     ))}
                     <p className="mx-2 my-0">{description}</p>
                 </div>
