@@ -6,7 +6,7 @@ interface Props {
 
 export function HomeCard({ title, description, tags }: Props) {
     return (
-        <div className="col round-1 border-1px border-bottom-1px border-left-1px hue round-1 w-span-5 grow overflow-no">
+        <div className="col round-1 border-1px border-bottom-1px border-left-1px hue round-1 shrink w-span-5 grow overflow-no">
             <div className="border-bottom-1px chroma-bg-2 h-6 px-2 row align-center f-weight-xl">
                 {title}
             </div>

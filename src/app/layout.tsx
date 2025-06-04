@@ -1,7 +1,7 @@
 "use client";
 
 import "./globals.css";
-import "./oxiris-css-2.3.0.css";
+import "./oxiris-css-2.4.0.css";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { Roboto_Mono } from "next/font/google";
@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
 import { useSystemColorScheme } from "@/hooks/ useSystemColorScheme";
-import { GithubIcon } from "@/components/icon/github";
+import { ColorSchemeIcon } from "@/components/icon/color-scheme";
 
 const notoSansMono = Roboto_Mono({
     style: ["normal"],
@@ -122,7 +122,7 @@ export default function RootLayout({
                                     className="hide lg:row button h-6"
                                     onClick={switchColorScheme}
                                 >
-                                    Theme [{colorScheme}]
+                                    <ColorSchemeIcon className="h-2 w-2" />
                                 </button>
                                 <button
                                     className={`hide lg:row button h-6 ${
@@ -134,13 +134,6 @@ export default function RootLayout({
                                 >
                                     Rounded
                                 </button>
-                                <Link
-                                    href="https://github.com/filiBit"
-                                    className="hide lg:row button h-6 tertiary"
-                                    target="_blank"
-                                >
-                                    <GithubIcon className="h-3 w-3" />
-                                </Link>
                                 <button
                                     className={`lg:hide button tertiary h-6 toggle ${
                                         isMenuOpen ? "var-contained" : ""
@@ -157,7 +150,7 @@ export default function RootLayout({
                                     className="button h-6 tertiary"
                                     onClick={switchColorScheme}
                                 >
-                                    Theme [{colorScheme}]
+                                    <ColorSchemeIcon className="h-2 w-2" />
                                 </button>
                                 <button
                                     className={`button h-6 ${
@@ -169,13 +162,6 @@ export default function RootLayout({
                                 >
                                     Rounded
                                 </button>
-                                <Link
-                                    href="https://github.com/filiBit"
-                                    className="button"
-                                    target="_blank"
-                                >
-                                    <GithubIcon className="h-3 w-3" />
-                                </Link>
                             </div>
                         )}
 
