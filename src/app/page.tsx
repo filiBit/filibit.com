@@ -11,26 +11,28 @@ export default function Home() {
     return (
         <>
             <div className="px-2 md:px-4">
-                <div className="col gap-4 my-16 max-w-span-11 mx-auto">
-                    <h1 className="h1 m-0 f-size-xl sm:f-size-2xl max-w-span-5">
-                        5 years of building&nbsp;digital products
-                    </h1>
-                    <div className="align-self-end lh-2 text-end max-w-span-10 text-right">
-                        Improving businesses by following{" "}
-                        <span className="hue-d px-1 chroma-bg-2 text-underline ">
-                            Industry Standards
-                        </span>{" "}
-                        to&nbsp;develop{" "}
-                        <span className="hue-d px-1 chroma-bg-2">
-                            Software Solutions
-                        </span>{" "}
-                        and{" "}
-                        <span className="hue-d px-1 chroma-bg-2">
-                            Web Applications
-                        </span>
+                <div className="border-bttom-2px hue- -bg-2">
+                    <div className="col gap-6 mt-14 mb-20 sm:mt-18 sm:mb-26 max-w-span-11 mx-auto hue-neutral">
+                        <h1 className="h1 m-0 f-size-xl sm:f-size-2xl md:f-size-3xl max-w-span-5 md:max-w-span-6 hue-d">
+                            5 years of building&nbsp;digital products
+                        </h1>
+                        <div className="align-self-end lh-2 text-end max-w-span-10 text-right">
+                            Improving businesses by following{" "}
+                            <span className="hue-d px-1 chroma-bg-2 text-underline ">
+                                Industry Standards
+                            </span>{" "}
+                            to&nbsp;develop{" "}
+                            <span className="hue-d px-1 chroma-bg-2">
+                                Software Solutions
+                            </span>{" "}
+                            and{" "}
+                            <span className="hue-d px-1 chroma-bg-2">
+                                Web Applications
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <h2 className="md:text-center h2 mt-16 mb-6">The process</h2>
+                <h2 className="md:text-center h2 mb-6">The process</h2>
                 <div className="col gap-4 xl:gap-6">
                     <div className="row xl:col gap-2 max-w-span-6 xl:max-w-span-16 w-100% mx-auto">
                         <div className="col xl:row pt-0 h-span-7 xl:h-4 pb-8 xl:pb-0 xl:pt-0 xl:px-15">
@@ -84,7 +86,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center my-16 border-1px round-1 py-6 px-2 chroma-bg-2 hue-d">
+                <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center my-16 sm:my-20 border-1px round-1 py-6 px-2 chroma-bg-2 hue-d">
                     <Link
                         href="/showcase"
                         className="button var-contained w-100% max-w-span-4 h-6 chroma-bg-0"
@@ -102,7 +104,7 @@ export default function Home() {
                 <div className="row flex-wrap gap-4 mb-8">
                     <HomeCard
                         title="Frontend"
-                        description="Building aesthetic and optimized user interfaces"
+                        description="Building interactive and aesthetic user interfaces optimized for speed"
                         tags={["SEO", "Accessibility", "Responsive design"]}
                     />
                     <HomeCard
@@ -125,7 +127,20 @@ export default function Home() {
                         ]}
                     />
                 </div>
-                <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center my-16 border-1px round-1 py-6 px-2 chroma-bg-2 hue-d">
+                {/* <div className="my-16 sm:my-20">
+                    <h2 className="h2 mb-6 text-center">Testimonials</h2>
+                    <div className="col gap-4 align-center">
+                        <Testimonial
+                            name="Ivan Knezović"
+                            companyName="Transfer Me Dalmatia"
+                            quote="Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
+                        />
+                        <Link href="/showcase" className="link px-2 py-1">
+                            See more
+                        </Link>
+                    </div>
+                </div> */}
+                <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center my-16 sm:my-20 border-1px round-1 py-6 px-2 chroma-bg-2 hue-d">
                     <Link
                         href="/showcase"
                         className="button var-contained max-w-span-4 w-100% h-6 chroma-bg-0"
@@ -139,7 +154,7 @@ export default function Home() {
                         Contact
                     </Link>
                 </div>
-                <div className="row flex-wrap gap-4 mb-8">
+                <div className="row flex-wrap gap-4 mb-16 sm:mb-20">
                     <div className="w-span-6 grow shrink">
                         <h2 className="h2">
                             Tech stack{" "}

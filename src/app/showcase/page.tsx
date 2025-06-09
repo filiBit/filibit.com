@@ -17,7 +17,7 @@ export default function Showcase() {
                     <ShowcaseCard
                         imageUrls={["showcase/croatia-shuttle.png"]}
                         title="Web solution for a taxi company"
-                        description="Implementation of client-side business logic and GUI (Graphical User Interface), and integration with existing API for a company offering private transfers."
+                        description="A taxi company offering private transfers and tours requested a complete rebuild of their old website. We used the latest technology to implement a new and responsive Graphical User Interface, develop client-side logic, integrate the solution with existing API, and improve the search engine rating."
                         tags={[
                             "HTML",
                             "CSS",
