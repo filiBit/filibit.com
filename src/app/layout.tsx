@@ -3,7 +3,7 @@
 import "./globals.css";
 import "./oxiris-css-2.5.0.css";
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Roboto_Mono } from "next/font/google";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/Logo";
@@ -33,21 +33,9 @@ export default function RootLayout({
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    const [cornerRadiusFactor, setCornerRadiusFactor] = useState<number>(1);
-
     function switchColorScheme() {
         setColorScheme(colorScheme === "dark" ? "light" : "dark");
     }
-
-    function toggleCornerRadius() {
-        setCornerRadiusFactor(cornerRadiusFactor === 0 ? 1 : 0);
-    }
-
-    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
-    const toggleMenu = useCallback(() => {
-        setIsMenuOpen(!isMenuOpen);
-    }, [isMenuOpen, setIsMenuOpen]);
 
     return (
         <>
@@ -57,26 +45,17 @@ export default function RootLayout({
                 }
             `}</style>
             <html lang="en">
-                <body
-                    className={`${colorScheme} col md:p-3 m-0 lh-1.5`}
-                    style={{
-                        // @ts-expect-error - CSS custom property
-                        "--ox-round-factor": cornerRadiusFactor,
-                    }}
-                >
-                    <div
-                        className="grow max-w-100% mx-auto col gap-2 md:gap-3"
-                        style={{ width: "1280px" }}
-                    >
+                <body className={`${colorScheme} col md:p-3 m-0 lh-1.5`}>
+                    <div className="grow max-w-span-16 w-100% mx-auto col gap-2 md:gap-3 overflow-no">
                         <div className="mt-2 mx-2 md:m-0 row gap-1 justify-between">
                             <Link
                                 href="/"
                                 className="button border-0 p-0 col w-span-3 align-start justify-center h-6 round-1"
                             >
-                                <Logo />
+                                <Logo className="hue-d" />
                             </Link>
-                            <div className="row justify-end gap-1">
-                                <nav className="hide md:row lg:hide gap-1 hue-d">
+                            <div className="row justify-start gap-1">
+                                <nav className="hide md:row gap-1 hue-d">
                                     <Link
                                         className={`button h-6 ${
                                             pathname === "/"
@@ -119,54 +98,16 @@ export default function RootLayout({
                                     </Link>
                                 </nav>
                                 <button
-                                    className="hide lg:row button h-6"
+                                    className="button h-6"
                                     onClick={switchColorScheme}
                                 >
                                     <ColorSchemeIcon className="h-2 w-2" />
-                                </button>
-                                <button
-                                    className={`hide lg:row button h-6 ${
-                                        cornerRadiusFactor === 0
-                                            ? "var-indicator"
-                                            : "var-indicator-filled"
-                                    }`}
-                                    onClick={toggleCornerRadius}
-                                >
-                                    Rounded
-                                </button>
-                                <button
-                                    className={`lg:hide button tertiary h-6 toggle ${
-                                        isMenuOpen ? "var-contained" : ""
-                                    }`}
-                                    onClick={toggleMenu}
-                                >
-                                    ...
                                 </button>
                             </div>
                         </div>
-                        {isMenuOpen && (
-                            <div className="col sm:row sm:justify-end align-end lg:hide md:round-2 mx-2 md:mx-0 gap-1 align-start">
-                                <button
-                                    className="button h-6 tertiary"
-                                    onClick={switchColorScheme}
-                                >
-                                    <ColorSchemeIcon className="h-2 w-2" />
-                                </button>
-                                <button
-                                    className={`button h-6 ${
-                                        cornerRadiusFactor === 0
-                                            ? "var-indicator"
-                                            : "var-indicator-filled"
-                                    }`}
-                                    onClick={toggleCornerRadius}
-                                >
-                                    Rounded
-                                </button>
-                            </div>
-                        )}
 
                         <div className="col lg:row gap-3">
-                            <nav className="hide lg:col gap-1 letter-0.1em w-span-3 hue-d">
+                            <nav className="hide gap-1 letter-0.1em w-span-3 hue-d">
                                 <Link
                                     className={`button h-6 ${
                                         pathname === "/" ? "var-contained" : ""
@@ -208,22 +149,19 @@ export default function RootLayout({
                             </nav>
 
                             <div className="col gap-0 md:gap-3 grow">
-                                <main className="col w-100% border-top-1px md:border-1px md:round-1 grow-0 overflow-no primary">
-                                    <div className="row align-center h-6 px-2 fg-$bg border-bottom-1px">
-                                        &gt;{" "}
-                                        {pathname.slice(1, 2).toUpperCase() +
-                                            pathname.slice(2) || "Home"}
-                                    </div>
-                                    {children}
-                                </main>
+                                <div className="col w-100% md:border-1px md:round-1 grow-0 overflow-no primary">
+                                    <main className="col w-100%">
+                                        {children}
+                                    </main>
+                                </div>
                                 <Footer />
                             </div>
                         </div>
                     </div>
 
-                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px chroma-bg-0">
+                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px chroma-bg-2 ue-d">
                         <Link
-                            className={`button h-6 grow p-0 ${
+                            className={`button chroma-bg-0 h-6 grow p-0 ${
                                 pathname === "/" ? "var-contained" : ""
                             }`}
                             href="/"
@@ -232,7 +170,7 @@ export default function RootLayout({
                         </Link>
                         <Link
                             href="/showcase"
-                            className={`button h-6 grow p-0 ${
+                            className={`button chroma-bg-0 h-6 grow p-0 ${
                                 pathname === "/showcase" ? "var-contained" : ""
                             }`}
                         >
@@ -240,7 +178,7 @@ export default function RootLayout({
                         </Link>
                         <Link
                             href="/about"
-                            className={`button h-6 grow p-0 ${
+                            className={`button chroma-bg-0 h-6 grow p-0 ${
                                 pathname === "/about" ? "var-contained" : ""
                             }`}
                         >
@@ -248,7 +186,7 @@ export default function RootLayout({
                         </Link>
                         <Link
                             href="/contact"
-                            className={`button h-6 grow p-0 ${
+                            className={`button chroma-bg-0 h-6 grow p-0 ${
                                 pathname === "/contact" ? "var-contained" : ""
                             }`}
                         >
