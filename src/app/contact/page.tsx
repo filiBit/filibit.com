@@ -33,7 +33,7 @@ export default function Contact() {
                             CV
                         </a>
                         <a
-                            href="https:github.com/filiBit"
+                            href="https://github.com/filiBit"
                             className="link row align-center justify-center h-4 w-4"
                             target="_blank"
                         >
