@@ -1,4 +1,8 @@
-export function Logo() {
+interface Props {
+    className?: string;
+}
+
+export function Logo({ className }: Props) {
     return (
         <svg
             width="192"
@@ -6,6 +10,7 @@ export function Logo() {
             viewBox="0 0 192 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className={className}
         >
             <path
                 fillRule="evenodd"
