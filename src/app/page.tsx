@@ -1,4 +1,5 @@
 import { HomeCard } from "@/components/home-card";
+import { Testimonial } from "@/components/testimonial";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -10,26 +11,24 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <>
-            <div className="px-2 md:px-4">
-                <div className="border-bttom-2px hue- -bg-2">
-                    <div className="col gap-6 mt-14 mb-20 sm:mt-18 sm:mb-26 max-w-span-11 mx-auto hue-neutral">
-                        <h1 className="h1 m-0 f-size-xl sm:f-size-2xl md:f-size-3xl max-w-span-5 md:max-w-span-6 hue-d">
-                            5 years of building&nbsp;digital products
-                        </h1>
-                        <div className="align-self-end lh-2 text-end max-w-span-10 text-right">
-                            Improving businesses by following{" "}
-                            <span className="hue-d px-1 chroma-bg-2 text-underline ">
-                                Industry Standards
-                            </span>{" "}
-                            to&nbsp;develop{" "}
-                            <span className="hue-d px-1 chroma-bg-2">
-                                Software Solutions
-                            </span>{" "}
-                            and{" "}
-                            <span className="hue-d px-1 chroma-bg-2">
-                                Web Applications
-                            </span>
-                        </div>
+            <div className="px-2 sm:px-4 md:px-6">
+                <div className="col gap-6 mt-14 mb-20 sm:mt-18 sm:mb-26 max-w-span-11 mx-auto hue-neutral">
+                    <h1 className="h1 m-0 f-size-xl sm:f-size-2xl md:f-size-3xl max-w-span-5 md:max-w-span-6 hue-d">
+                        5 years of building&nbsp;digital products
+                    </h1>
+                    <div className="align-self-end lh-2 text-end max-w-span-10 text-right">
+                        Improving businesses by following{" "}
+                        <span className="hue-d px-1 chroma-bg-2 text-underline ">
+                            Industry Standards
+                        </span>{" "}
+                        to&nbsp;develop{" "}
+                        <span className="hue-d px-1 chroma-bg-2">
+                            Software Solutions
+                        </span>{" "}
+                        and{" "}
+                        <span className="hue-d px-1 chroma-bg-2">
+                            Web Applications
+                        </span>
                     </div>
                 </div>
                 <h2 className="md:text-center h2 mb-6">The process</h2>
@@ -127,19 +126,19 @@ export default function Home() {
                         ]}
                     />
                 </div>
-                {/* <div className="my-16 sm:my-20">
+                <div className="my-16 sm:my-20">
                     <h2 className="h2 mb-6 text-center">Testimonials</h2>
                     <div className="col gap-4 align-center">
                         <Testimonial
                             name="Ivan Knezović"
-                            companyName="Transfer Me Dalmatia"
-                            quote="Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet."
+                            companyName="Croatia Shuttle Service"
+                            quote="We needed our website to make a stronger visual impact and get its content up-to-date. Filibit delivered everything on time, guided us through every decision, and exceeded our expectations. We highly recommend Filibit."
                         />
                         <Link href="/showcase" className="link px-2 py-1">
                             See more
                         </Link>
                     </div>
-                </div> */}
+                </div>
                 <div className="row flex-wrap justify-center gap-2 md:gap-4 align-center my-16 sm:my-20 border-1px round-1 py-6 px-2 chroma-bg-2 hue-d">
                     <Link
                         href="/showcase"

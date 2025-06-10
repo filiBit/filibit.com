@@ -13,7 +13,7 @@ export function HomeCard({ title, description, tags }: Props) {
             <div className="pt-2 grow col gap-2 justify-between chroma-bg">
                 <p className="mx-2 my-0">{description}</p>
                 <div
-                    className="p-2 row flex-wrap gap-1 f-size-sm select-none"
+                    className="p-2 row flex-wrap gap-1 f-size-xs select-none"
                     style={{
                         flexDirection: "row-reverse",
                         flexWrap: "wrap-reverse",
