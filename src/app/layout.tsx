@@ -46,7 +46,7 @@ export default function RootLayout({
             `}</style>
             <html lang="en">
                 <body className={`${colorScheme} col md:p-3 m-0 lh-1.5`}>
-                    <div className="grow max-w-span-16 w-100% mx-auto col gap-2 md:gap-3 overflow-no">
+                    <div className="grow max-w-span-16 w-100% mx-auto col gap-2 sm:gap-4 overflow-no">
                         <div className="mt-2 mx-2 md:m-0 row gap-1 justify-between">
                             <Link
                                 href="/"
@@ -55,11 +55,11 @@ export default function RootLayout({
                                 <Logo className="hue-d" />
                             </Link>
                             <div className="row justify-start gap-1">
-                                <nav className="hide md:row gap-1 hue-d">
+                                <nav className="hide md:row gap-1">
                                     <Link
                                         className={`button h-6 ${
                                             pathname === "/"
-                                                ? "var-contained"
+                                                ? "var-contained hue-d"
                                                 : ""
                                         }`}
                                         href="/"
@@ -70,7 +70,7 @@ export default function RootLayout({
                                         href="/showcase"
                                         className={`button h-6 ${
                                             pathname === "/showcase"
-                                                ? "var-contained"
+                                                ? "var-contained hue-d"
                                                 : ""
                                         }`}
                                     >
@@ -80,7 +80,7 @@ export default function RootLayout({
                                         href="/about"
                                         className={`button h-6 ${
                                             pathname === "/about"
-                                                ? "var-contained"
+                                                ? "var-contained hue-d"
                                                 : ""
                                         }`}
                                     >
@@ -90,7 +90,7 @@ export default function RootLayout({
                                         href="/contact"
                                         className={`button h-6 ${
                                             pathname === "/contact"
-                                                ? "var-contained"
+                                                ? "var-contained hue-d"
                                                 : ""
                                         }`}
                                     >
@@ -98,7 +98,7 @@ export default function RootLayout({
                                     </Link>
                                 </nav>
                                 <button
-                                    className="button h-6"
+                                    className="button chroma-bg-3 h-6 hue-b"
                                     onClick={switchColorScheme}
                                 >
                                     <ColorSchemeIcon className="h-2 w-2" />
@@ -148,8 +148,8 @@ export default function RootLayout({
                                 </Link>
                             </nav>
 
-                            <div className="col gap-0 md:gap-3 grow">
-                                <div className="col w-100% md:border-1px md:round-1 grow-0 overflow-no primary">
+                            <div className="col gap-0 md:gap-4 grow">
+                                <div className="col w-100% md:border-1px md:round-2 grow-0 overflow-no primary">
                                     <main className="col w-100%">
                                         {children}
                                     </main>
@@ -159,10 +159,10 @@ export default function RootLayout({
                         </div>
                     </div>
 
-                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px chroma-bg-2 ue-d">
+                    <nav className="fixed row md:hide bottom w-100% gap-1 p-1 border-top-1px chroma-bg-3 ue-d">
                         <Link
                             className={`button chroma-bg-0 h-6 grow p-0 ${
-                                pathname === "/" ? "var-contained" : ""
+                                pathname === "/" ? "var-contained hue-d" : ""
                             }`}
                             href="/"
                         >
@@ -171,7 +171,9 @@ export default function RootLayout({
                         <Link
                             href="/showcase"
                             className={`button chroma-bg-0 h-6 grow p-0 ${
-                                pathname === "/showcase" ? "var-contained" : ""
+                                pathname === "/showcase"
+                                    ? "var-contained hue-d"
+                                    : ""
                             }`}
                         >
                             Showcase
@@ -179,7 +181,9 @@ export default function RootLayout({
                         <Link
                             href="/about"
                             className={`button chroma-bg-0 h-6 grow p-0 ${
-                                pathname === "/about" ? "var-contained" : ""
+                                pathname === "/about"
+                                    ? "var-contained hue-d"
+                                    : ""
                             }`}
                         >
                             About
@@ -187,7 +191,9 @@ export default function RootLayout({
                         <Link
                             href="/contact"
                             className={`button chroma-bg-0 h-6 grow p-0 ${
-                                pathname === "/contact" ? "var-contained" : ""
+                                pathname === "/contact"
+                                    ? "var-contained hue-d"
+                                    : ""
                             }`}
                         >
                             Contact
