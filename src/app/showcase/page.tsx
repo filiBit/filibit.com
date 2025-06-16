@@ -35,16 +35,16 @@ export default function Showcase() {
                         description="A CSS framework for building nice GUIs (Graphical User Interfaces) fast. Wide set of utility and component classes are available for a good developer experience and consistency with design language."
                         tags={["CSS", "Javascript"]}
                         footerContent={
-                            <div className="row flex-wrap p-1 hue-d">
+                            <>
                                 <a
                                     href="https://oxiris.filibit.com"
-                                    className="button var-contained align-self-start h-5 f-size-sm"
+                                    className="button chroma-bg-3 align-self-start h-5 f-size-sm hue-d"
                                     target="_blank"
                                 >
                                     Documentation&nbsp;
                                     <ExternalLinkIcon className="h-2 w-2" />
                                 </a>
-                            </div>
+                            </>
                         }
                     />
                     <ShowcaseCard
@@ -58,16 +58,16 @@ export default function Showcase() {
                             "Virtual DOM",
                         ]}
                         footerContent={
-                            <div className="row flex-wrap p-1 hue-d">
+                            <>
                                 <a
                                     href="https://abstraxo.com"
-                                    className="button var-contained align-self-start h-5 f-size-sm"
+                                    className="button chroma-bg-3 align-self-start h-5 f-size-sm hue-d"
                                     target="_blank"
                                 >
                                     App&nbsp;
                                     <ExternalLinkIcon className="h-2 w-2" />
                                 </a>
-                            </div>
+                            </>
                         }
                     />
                     <ShowcaseCard
@@ -82,7 +82,7 @@ export default function Showcase() {
                         href="/contact"
                         className="button var-contained h-6 mt-3 hue-d"
                     >
-                        Contact me
+                        Contact us
                     </Link>
                 </div>
             </div>
