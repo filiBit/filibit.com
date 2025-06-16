@@ -27,21 +27,21 @@ export default function Contact() {
                     <div className="row align-center justify-end gap-1 select-none">
                         <a
                             href="/CV.pdf"
-                            className="link row align-center justify-center h-4 w-4 f-weight-xl"
+                            className="link row align-center justify-center h-4 w-4 f-weight-xl hue-d"
                             target="_blank"
                         >
                             CV
                         </a>
                         <a
                             href="https://github.com/filiBit"
-                            className="link row align-center justify-center h-4 w-4"
+                            className="link row align-center justify-center h-4 w-4 hue-d"
                             target="_blank"
                         >
                             <GithubIcon className="max-h-3 max-w-3 w-100% h-100%" />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/filip-biterski/"
-                            className="link row align-center justify-center h-4 w-4"
+                            className="link row align-center justify-center h-4 w-4 hue-d"
                             target="_blank"
                         >
                             <LinkedInIcon className="max-h-3 max-w-3 w-100% h-100%" />
@@ -53,7 +53,7 @@ export default function Contact() {
                         <div className="select-all f-size-lg">
                             Filip Biterski
                         </div>
-                        <div className="row px-1 hue-b chroma-bg-2 lh-2">
+                        <div className="row px-1 hue-d chroma-bg-3 lh-2 f-size-sm">
                             CEO / Software developer
                         </div>
                     </div>
@@ -61,6 +61,11 @@ export default function Contact() {
                         <div className="row align-center flex-wrap">
                             <div className="select-all f-size-sm">
                                 filip.biterski@filibit.com
+                            </div>
+                        </div>
+                        <div className="row align-center flex-wrap">
+                            <div className="select-all f-size-sm">
+                                Osijek, Croatia
                             </div>
                         </div>
                     </div>
